@@ -212,8 +212,13 @@ const getPass = ()=> {
                                 <h1>জানালা</h1>
                             </div>
                             <div class="flex items-center text-xl gap-8">
-                                <button class="outline-1 rounded-sm py-2 px-3 text-[#422AD5] hover:bg-[#422ad8] hover:text-white cursor-pointer"><i class="fa-solid fa-circle-question pr-2"></i>FAQ</button>
-                                <button class="outline-1 rounded-sm py-2 px-3 text-[#422AD5] hover:bg-[#422ad8] hover:text-white cursor-pointer "><i class="fa-solid fa-book-open pr-2"></i>Learn</button>
+                                <a href="#faq" class="outline outline-1 rounded-sm py-2 px-3 text-[#422AD5] hover:bg-[#422ad8] hover:text-white cursor-pointer inline-block scroll-smooth">
+                                    <i class="fa-solid fa-circle-question pr-2"></i>FAQ</a>
+
+                                <a href="#learn" class="outline outline-1 rounded-sm py-2 px-3 text-[#422AD5] hover:bg-[#422ad8] hover:text-white cursor-pointer inline-block">
+                                    <i class="fa-solid fa-book-open pr-2"></i>Learn</a>
+
+
                                 <button class="outline-1 rounded-sm py-2 px-3 text-[#422AD5] hover:bg-[#422ad8] hover:text-white cursor-pointer"><i class="fa-solid fa-arrow-right-from-bracket pr-2"></i>Logout</button>
                             </div>
                         </div>
@@ -229,7 +234,7 @@ const getPass = ()=> {
 
                 frequently_section.innerHTML = `
 
-                <section id="faq-section" class="my-52" >
+                <section id="faq" class="my-52" >
                     <h1 class="text-center text-3xl font-bold mb-10"><span class="text-[#00BCFF]">Frequently</span>  Asked Questions</h1>
                     <div class="collapse collapse-plus bg-base-100 border border-base-300">
                         <input type="radio" name="my-accordion-3" checked="checked" />
@@ -260,7 +265,7 @@ const getPass = ()=> {
                 `
 
                 btn_section.innerHTML = `
-                <section class="text-center " id="">
+                <section class="text-center " id="learn">
                     <h1 class="text-center text-3xl font-bold mb-10"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies</h1>
                     <div class="" id="all-btn"></div>
                     <div class="grid grid-cols-3 mt-20 " id="all-card"></div>
@@ -316,3 +321,5 @@ const getPass = ()=> {
 }
 
 
+// <button class="outline-1 rounded-sm py-2 px-3 text-[#422AD5] hover:bg-[#422ad8] hover:text-white cursor-pointer"><i class="fa-solid fa-circle-question pr-2"></i>FAQ</button>
+//  <button class="outline-1 rounded-sm py-2 px-3 text-[#422AD5] hover:bg-[#422ad8] hover:text-white cursor-pointer "><i class="fa-solid fa-book-open pr-2"></i>Learn</button>
