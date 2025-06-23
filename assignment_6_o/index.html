@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/11ab1fff1a.js" crossorigin="anonymous"></script>
+    <!-- daisyUI + tailwindcss -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .active{
+            background-color: #422ad8;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav-section"></div>
+    
+    <section class="mx-16">
+        <section id="banar_section">
+            <div class="flex items-center justify-between mb-52"> 
+                <div>
+                    <h1 class=" text-3xl font-bold"><span class="text-[#00BCFF]">English</span>  is Easy!!</h1>
+                    <p class=" text-gray-400 mt-2">
+                        আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান,</p>
+                        <p class=" text-gray-400 mb-5">আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+                    <input    type="text" placeholder="Enter your name" name="" id="" class="block px-8 py-2 rounded-md mb-2 pr-30">
+                    <input type="password" placeholder="Enter login code (123456)" name="" id="myPass" class="block px-8 py-2 rounded-md pr-30">
+                    <button onclick="getPass()" class="rounded-sm py-2 px-3 bg-[#422ad8] text-white cursor-pointer mt-2">Get Started</button>
+                </div>
+                <img src="./B11-A6-English-Janala/assets/hero-student.png" alt="">
+            </div>
+            <!-- <script>
+                const getPass = ()=>{
+                    const myPass = document.getElementById('myPass').value;
+                    if (myPass == 123456) {
+                        console.log("password is right................................................................ ha ha ha")
+                        
+                    }else{
+                        console.log(".......................... r o n g ...............................")
+                    }
+                }
+            </script> -->
+
+        </section>
+        <div id="btn-section"></div>
+        <!-- <div class="" id="all-btn"></div> -->
+        <div id="speener"></div>
+        
+        <script src="/assignment_6/script-final.js"></script>
+       <div class="bg-[#ededed] py-35 mt-10 rounded-lg text-center hidden" id="lesson_select" >
+                <p class="text-[#777472]">আপনি এখনো কোন Lesson Select করেননি</p>
+                <p class="text-3xl font-bold mt-2">একটি Lesson Select করুন।</p>
+            </div>
+        
+        <div id="frequently-section"></div>
+        
+        <footer class="my-32" id="footer-section">
+            <section class="flex justify-between">
+                <div>
+                    <div class="flex items-center text-xl mt-2">
+                        <h1>English</h1>
+                        <img src="./B11-A6-English-Janala/assets/logo.png" alt="">
+                        <h1>জানালা</h1>
+                    </div>
+                    <p class="mt-2">ইংরেজি শিখুন সহজে</p>
+                    <p class="mt-2"><span>Providing ED-Tech Applications since 2025</span></p>
+                </div>
+                <div class="">
+                    <p>Follow us</p>
+                    <div class="flex gap-2 mt-2">
+                        <img src="./B11-A6-English-Janala/assets/fb-thumb.png" alt="">
+                        <img src="./B11-A6-English-Janala/assets/youtube-thumb.png" alt="">
+                        <img src="./B11-A6-English-Janala/assets/instagram-thumb.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+
+    </section>
+
+</body>
+</html>
